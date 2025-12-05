@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Fairways – Golf Courses Around the Globe</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&family=Lora&display=swap" rel="stylesheet">
+
+    <style>
+      /* Setup */
+      body {
+        margin: 0;
+        background-color: #e4e6df;
+        color: #222222;
+        font-family: "Open Sans", Arial, sans-serif;
+      }
+
+      .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+        background-color: #ffffff;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 24px 32px;
+        border-bottom: 1px solid #dcdcdc;
+      }
+
+      .site-title {
+        font-family: "Merriweather", serif;
+        font-size: 32px;
+        margin: 0;
+        color: #264327;
+      }
+
+      .tagline {
+        font-family: "Lora", serif;
+        font-size: 14px;
+        margin-top: 4px;
+        color: #555555;
+      }
+
+      /* Navigation */
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        display: inline-block;
+        margin-left: 18px;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        color: #264327;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* Section Setup */
+      .section {
+        padding: 40px 32px 48px 32px;
+        border-bottom: 1px solid #eeeeee;
+      }
+
+      .section h2 {
+        font-family: "Merriweather", serif;
+        font-size: 24px;
+        margin-top: 0;
+        color: #264327;
+      }
+
+      /* Home Section */
+      .section-home .hero {
+        display: flex;
+        gap: 32px;
+        margin-top: 16px;
+      }
+
+      .hero-text {
+        flex: 1;
+      }
+
+      .hero-image {
+        flex: 1;
+      }
+
+      .hero-image img {
+        width: 100%;
+        border-radius: 4px;
+      }
+
+      .home-cards {
+        display: flex;
+        gap: 24px;
+        margin-top: 32px;
+      }
+
+      .card {
+        flex: 1;
+        border: 1px solid #dddddd;
+        padding: 16px 18px;
+        background-color: #f8f9f5;
+      }
+
+      /* Top 10 Section */
+      .section-top10 .top10-layout {
+        display: flex;
+        gap: 32px;
+        margin-top: 20px;
+      }
+
+      .course-name {
+        font-weight: 600;
+      }
+
+      .top10-image img {
+        width: 100%;
+        border-radius: 4px;
+      }
+
+      /* Regions Section */
+      .section-regions table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-size: 14px;
+      }
+
+      .section-regions th,
+      .section-regions td {
+        border: 1px solid #d5d5d5;
+        padding: 10px 8px;
+      }
+
+      .section-regions th {
+        background-color: #f2f4f0;
+        font-weight: 600;
+      }
+
+      .region-columns {
+        display: flex;
+        gap: 24px;
+        margin-top: 28px;
+      }
+
+      .region img {
+        width: 100%;
+        border-radius: 4px;
+      }
+
+      /* Gallery Section */
+      .gallery-grid {
+        display: flex;
+        gap: 24px;
+        margin-top: 24px;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        border-radius: 4px;
+      }
+
+      /* Footer */
+      footer {
+        padding: 24px 32px 32px 32px;
+        font-size: 13px;
+        color: #555555;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <!-- Header -->
+      <header>
+        <div>
+          <h1 class="site-title">World Fairways</h1>
+          <p class="tagline">A simple personal guide to memorable golf courses</p>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#top10">Top Ten Courses</a></li>
+            <li><a href="#regions">Global Regions</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Home Section -->
+      <section id="home" class="section section-home">
+
+        <div class="hero">
+          <div class="hero-text">
+            <h2>Welcome to World Fairways</h2>
+            <p>This page collects a few golf courses from around the world.</p>
+            <p>Everything is on one page for simple navigation.</p>
+          </div>
+
+          <div class="hero-image">
+            <img src="IE.jpg" alt="Golf course hero image">
+          </div>
+        </div>
+
+        <div class="home-cards">
+          <div class="card">
+            <h3>Top Ten Courses</h3>
+            <p>A simple list of scenic destinations.</p>
+            <a href="#top10">See list</a>
+          </div>
+
+          <div class="card">
+            <h3>Global Regions</h3>
+            <p>Golf in Asia, Europe, and North America.</p>
+            <a href="#regions">Explore</a>
+          </div>
+
+          <div class="card">
+            <h3>Gallery</h3>
+            <p>Images that show different golf landscapes.</p>
+            <a href="#gallery">View</a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Top 10 Section -->
+      <section id="top10" class="section section-top10">
+        <h2>Top Ten Bucket List Courses</h2>
+        <p>A personal selection of memorable courses.</p>
+
+        <div class="top10-layout">
+          <div class="top10-text">
+            <ol>
+              <li><span class="course-name">Augusta National</span>, United States</li>
+              <li><span class="course-name">St Andrews Old Course</span>, Scotland</li>
+              <li><span class="course-name">Pebble Beach</span>, United States</li>
+              <li><span class="course-name">Royal County Down</span>, Northern Ireland</li>
+              <li><span class="course-name">Cape Kidnappers</span>, New Zealand</li>
+              <li><span class="course-name">Royal Melbourne</span>, Australia</li>
+              <li><span class="course-name">Bandon Dunes</span>, United States</li>
+              <li><span class="course-name">Le Golf National</span>, France</li>
+              <li><span class="course-name">Cabot Cliffs</span>, Canada</li>
+              <li><span class="course-name">Kawana Fuji Course</span>, Japan</li>
+            </ol>
+          </div>
+
+          <div class="top10-image">
+            <img src="IE1.jpg" alt="Golf cliff image">
+          </div>
+        </div>
+      </section>
+
+      <!-- Regions Section -->
+      <section id="regions" class="section section-regions">
+        <h2>Global Regions</h2>
+        <p>Golf feels different around the world.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Region</th>
+              <th>Course</th>
+              <th>Country</th>
+              <th>Style</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Asia</td>
+              <td>Blue Canyon</td>
+              <td>Thailand</td>
+              <td>Resort course with trees</td>
+            </tr>
+
+            <tr>
+              <td>Europe</td>
+              <td>Royal Portrush</td>
+              <td>Northern Ireland</td>
+              <td>Links with dunes</td>
+            </tr>
+
+            <tr>
+              <td>North America</td>
+              <td>Banff Springs</td>
+              <td>Canada</td>
+              <td>Mountain course</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="region-columns">
+          <div class="region">
+            <img src="IE2.jpg" alt="Asia golf">
+            <h3>Asia</h3>
+            <p>Asia mixes mountain layouts and coastal holes.</p>
+          </div>
+
+          <div class="region">
+            <img src="IE3.jpg" alt="Europe golf">
+            <h3>Europe</h3>
+            <p>Europe is known for traditional links.</p>
+          </div>
+
+          <div class="region">
+            <img src="IE4.jpg" alt="North America golf">
+            <h3>North America</h3>
+            <p>North America has a wide variety of landscapes.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="section section-gallery">
+        <h2>Gallery</h2>
+        <p>Images that highlight different golf environments.</p>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="IE5.jpg" alt="Links fairway">
+            <figcaption>Links fairway.</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="IE6.jpg" alt="Lake green">
+            <figcaption>Green beside a lake.</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img src="IE7.jpg" alt="Resort course sunset">
+            <figcaption>Resort course by the beach.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>This site is created for practice.</p>
+        <p>Images are used for learning only.</p>
+
+        <p class="footer-links">
+          <a href="https://www.pgatour.com" target="_blank">Visit PGA Tour</a>
+          <a href="mailto:yourname@uwaterloo.ca">Email the creator</a>
+        </p>
+
+        <p class="footer-small">Created by David Kim.</p>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
